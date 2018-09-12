@@ -9,8 +9,7 @@ resource "aws_s3_bucket" "bcrbucket-1" {
 
 provider "aws" {
   region = "ca-central-1"
-  access_key = ${var.AWS_KEY}
-  secret_key = ${var.AWS_SECRET}
+
 }
 
 # Change the aws_instance we declared earlier to now include "depends_on"
